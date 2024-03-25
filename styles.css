@@ -10,13 +10,20 @@ header {
     padding: 15px;
 }
 
+@font-face {
+    font-family: "komet", sans-serif;
+    src: url('https://use.typekit.net/jts5cqc.css');
+    font-weight: 400;
+    font-style: normal;
+}
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "komet", sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #faf1f4;
+    background-color: #FFF7FA;
     text-align: center;
     text-decoration: none;
+    color: #0B21A4;
 }
 @keyframes bounce {
     0%, 20%, 60%, 100% {transform: translateY(0);}
@@ -26,7 +33,7 @@ body {
   
 h1 {
     animation: bounce 1s infinite;
-    color: #e2738c; 
+    color: #a45265; 
 }
 h2 {
     color: #e69aab;
@@ -119,6 +126,22 @@ a:active {
     display: table;
     clear: both;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;  
+    grid-template-columns: 20% 1fr 20%;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+header, nav, main, aside, footer{
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+img {
+    border-radius: 40px; /* round the corners for the pic */
+  }
 
 footer {
     background-color:pink;
